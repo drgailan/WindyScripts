@@ -1,0 +1,7 @@
+#!name=Windy Premium Unlock
+#!desc=解锁 Windy Premium 功能
+#!system=ios
+[Script]
+windy_premium = type=http-response,pattern=^https:\/\/(node|ims)\.windy\.com\/api\/v\d+\/(user|account|subscription).*,requires-body=1,max-size=0,script-path=https://github.com/drgailan/WindyScripts/blob/main/windy_premium.js
+[MITM]
+hostname = node.windy.com, ims.windy.com
